@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "lib": ["es5", "dom"],
+      "types": ["cypress", "node"]
+    },
+    "include": [
+    "**/*.ts", 
+    "cypress/e2e/herokuapp-tests/HerokuTests.cy.ts",  
+    "cypress/**/*.js",
+    "cypress/**/*.d.ts"
+  ]
+  }
