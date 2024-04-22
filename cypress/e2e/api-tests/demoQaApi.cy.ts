@@ -1,14 +1,17 @@
+import { faker } from '@faker-js/faker';
+
 describe("DemoQA Bookstore tests", () => {
     it('Post - Create user', () => {
+      const userName = faker.internet.email();
         cy.request({
           method: 'POST',
           url: "https://demoqa.com/Account/v1/User",
           body: {
-            userName: "TonyBobonie42",
-            password: "Test1234561"
+            userName: userName,
+            password: "Test1234561!"
           },
         }).then((response) => {
-          expect(response.status).is.eq(201)
+          expect(response.status).to.eq(201)
         });
       });
     it("Authorize @positive", () => {
