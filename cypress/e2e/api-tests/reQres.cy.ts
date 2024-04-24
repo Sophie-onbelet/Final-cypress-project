@@ -4,12 +4,14 @@ import { faker } from "@faker-js/faker";
 
 describe("API Tests Reqres", () => {
   it("Get user from endpoint @Positive", async () => {
+    const expectedData: User[] = require("/Users/sophieonbelet/Coding Projects/Final-cypress-project/cypress/fixtures/user.json");
     cy.request({
       method: "GET",
       url: `https://reqres.in/api/users/2`,
     }).then((response) => {
       expect(response.status).to.eq(200);
       const responseBody: User = response.body.data;
+      expect(responseBody).to.deep.equal(expectedData); 
       expect(responseBody.email).to.eq("janet.weaver@reqres.in");
     });
   });
