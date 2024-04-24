@@ -1,13 +1,20 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "lib": ["es5", "dom"],
-      "types": ["cypress", "node"]
-    },
-    "include": [
-    "**/*.ts", 
-    "cypress/e2e/herokuapp-tests/HerokuTests.cy.ts",  
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "module": "commonjs",
+    "types": ["cypress", "node"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@support/*": ["./support/*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "cypress/e2e/herokuapp-tests/HerokuTests.cy.ts",
     "cypress/**/*.js",
     "cypress/**/*.d.ts"
   ]
-  }
+}
