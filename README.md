@@ -1,26 +1,32 @@
-Automation targets
+**Automation targets**
+
 DemoQA formpage (UI)
+
 DemoQA Bookstore API
+
 Reqres API
 
-Technologies used
+**Technologies used**
+
 Used Cypress with Typescript
 
-Setup instructions
+**Setup instructions**
+
 To set up the project locally and run the automated tests, follow these steps:
 
-Initialize npm:
+_Initialize npm:_
 
 npm init -y
-Install Cypress and TypeScript:
+
+_Install Cypress and TypeScript:_
 
 npm install cypress --save-dev
 npm install typescript --save-dev
 
-Initialize TypeScript configuration:
+_Initialize TypeScript configuration:_
 
 npx tsc --init
 
-Install Faker for generating fake data:
+_Install Faker for generating fake data:_
 
 npm install faker --save-dev
