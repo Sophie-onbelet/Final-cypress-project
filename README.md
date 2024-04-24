@@ -1,7 +1,9 @@
 **Automation targets**
 
 DemoQA formpage (UI)
+
 DemoQA Bookstore API
+
 Reqres API
 
 **Technologies used**
