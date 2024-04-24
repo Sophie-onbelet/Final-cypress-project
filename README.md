@@ -1,12 +1,15 @@
 **Automation targets**
+
 DemoQA formpage (UI)
 DemoQA Bookstore API
 Reqres API
 
 **Technologies used**
+
 Used Cypress with Typescript
 
 **Setup instructions**
+
 To set up the project locally and run the automated tests, follow these steps:
 
 _Initialize npm:_
