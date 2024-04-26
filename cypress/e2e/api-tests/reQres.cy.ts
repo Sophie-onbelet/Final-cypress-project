@@ -11,7 +11,7 @@ describe("API Tests Reqres", () => {
     }).then((response) => {
       expect(response.status).to.eq(200);
       const responseBody: User = response.body.data;
-      expect(responseBody).to.deep.equal(expectedData); 
+      expect(responseBody).to.deep.equal(expectedData);
       expect(responseBody.email).to.eq("janet.weaver@reqres.in");
     });
   });
@@ -25,7 +25,7 @@ describe("API Tests Reqres", () => {
     }).then((response) => {
       const responseBody: Color = response.body.data;
       expect(response.status).to.eq(200);
-      expect(responseBody).to.deep.equal(expectedData); //deep equality comparison. It checks if the contents of the arrays or objects are the same, even if they are not the same instance in memory.
+      expect(responseBody).to.deep.equal(expectedData);
       expect(response.body.data[2].name).to.eq("true red");
       expect(responseBody).to.have.length(6);
     });
